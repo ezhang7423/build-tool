@@ -3,7 +3,7 @@
 * npm-rebuild: more complex, first updates repo, checks if there's any changes, and if there are rebuilds with npm and then restarts the process with the associated portnumber
 ## usage
 * git clone https://github.com/ezhang7423/jamstack-build-tool.git
-* replace the variables (&&variable&&) with your associated path and/or port number
+* replace the variables in ./jam-rebuild and ./npm-rebuild in the new cloned folder (&&variable&&) with your associated path and/or port number
 * chmod a+x ./jam-rebuild
 * chmod a+x ./npm-rebuild
 to use in the future, simply cd to directory and either
