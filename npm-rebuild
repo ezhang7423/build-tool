@@ -1,5 +1,5 @@
 #!/bin/bash
-cd &&/path/to/folder&& || exit
+cd &&/path/to/folder&&
 STATUS="$(git pull)"
 PID="$(lsof -i:&&3000&&)"
 PID=$(echo "$PID" | sed -n 2p)

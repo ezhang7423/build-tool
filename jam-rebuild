@@ -1,20 +1,8 @@
 #!/bin/bash
-cd &&/path/to/folder&& || exit
+cd &&/path/to/folder&&
 STATUS="$(git pull)"
-PID="$(lsof -i:&&3000&&)"
-PID=$(echo "$PID" | sed -n 2p)
-PID=$(echo "$PID" | cut -b 9-14)
-echo "PID = $PID"
-
-if [ "$PID" == "" ]; then echo "Not running"
-        nohup npm start & 
-fi
 if [ "$STATUS" == "Already up to date." ]; then
         echo "$STATUS"
 else
-        echo "Building..."
-        sudo npm run build
-        kill "${PID}"
-        nohup npm start &
-
+        echo "Finished building"
 fi
