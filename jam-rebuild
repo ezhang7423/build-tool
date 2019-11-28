@@ -1,7 +1,7 @@
 #!/bin/bash
-cd /fast_time_frontend || exit
+cd &&/path/to/folder&& || exit
 STATUS="$(git pull)"
-PID="$(lsof -i:3000)"
+PID="$(lsof -i:&&3000&&)"
 PID=$(echo "$PID" | sed -n 2p)
 PID=$(echo "$PID" | cut -b 9-14)
 echo "PID = $PID"
